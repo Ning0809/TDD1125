@@ -1,4 +1,5 @@
-﻿using NSubstitute;
+﻿using Budget;
+using NSubstitute;
 using NUnit.Framework;
 
 namespace BudgetKata;
@@ -15,8 +16,8 @@ public class BudgetServiceTest
         _budgetService = new BudgetService(_budgetRepo);
     }
 
-    [Test]
-    public void query_one_month()
+[Test]
+    public void query_one_day()
     {
         GivenBudget(new List<Budget>()
         {
@@ -31,6 +32,21 @@ public class BudgetServiceTest
     }
 
     [Test]
+    public void query_same_month()
+    {
+        GivenBudget(new List<Budget>()
+        {
+            new Budget()
+            {
+                YearMonth = "202311",
+                Amount = 300
+            }
+        });
+        var actualBudget = _budgetService.Query(new DateTime(2023, 11, 23), new DateTime(2023, 11, 25));
+        BudgetShouldBe(30, actualBudget);
+    }
+
+[Test]
     public void invalid_request()
     {
         GivenBudget(new List<Budget>()
@@ -42,6 +58,21 @@ public class BudgetServiceTest
             }
         });
         var actualBudget = _budgetService.Query(new DateTime(2023, 11, 27), new DateTime(2023, 11, 25));
+        BudgetShouldBe(0, actualBudget);
+    }
+
+    [Test]
+    public void query_no_data()
+    {
+        GivenBudget(new List<Budget>()
+        {
+            new Budget()
+            {
+                YearMonth = "202310",
+                Amount = 300
+            }
+        });
+        var actualBudget = _budgetService.Query(new DateTime(2023, 11, 25), new DateTime(2023, 11, 25));
         BudgetShouldBe(0, actualBudget);
     }
 

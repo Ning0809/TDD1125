@@ -1,8 +1,10 @@
-﻿namespace BudgetKata;
+﻿using Budget;
+
+namespace BudgetKata;
 
 public class BudgetService
 {
-    private IBudgetRepo _budgetRepo;
+    private readonly IBudgetRepo _budgetRepo;
 
     public BudgetService(IBudgetRepo budgetRepo)
     {
@@ -11,11 +13,23 @@ public class BudgetService
 
     public decimal Query(DateTime start, DateTime end)
     {
+        if (end.Month-start.Month==1)
+        {
+            var startMonthDays = DateTime.DaysInMonth(start.Year, start.Month);
+            var startMonthPeriod = startMonthDays - start.Day;
+        }
+
         if (end < start)
         {
             return 0;
         }
+
         var budgets = _budgetRepo.GetAll();
+        if (start.Month == end.Month && budgets.All(budget => budget.YearMonth != start.ToString("yyyyMM")))
+        {
+            return 0;
+        }
+        
         decimal totalBudget = 0;
         foreach (var budget in budgets)
         {
@@ -28,18 +42,8 @@ public class BudgetService
             var queryDays = (end - start).Days + 1;
 
             totalBudget= budgetPerDay * queryDays;
-
-
-
         }
-
         return totalBudget;
-
     }
 
-}
-
-public interface IBudgetRepo
-{
-    List<Budget> GetAll();
 }

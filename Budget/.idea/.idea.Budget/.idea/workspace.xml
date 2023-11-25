@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f627adab-791f-4fd8-a79c-b363f5f5ec9f" name="Changes" comment="add Budget.cs">
-      <change afterPath="$PROJECT_DIR$/BudgetKata/BudgetServiceTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BudgetKata/BudgetKata.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BudgetKata/BudgetKata.csproj" afterDir="false" />
+    <list default="true" id="f627adab-791f-4fd8-a79c-b363f5f5ec9f" name="Changes" comment="add test cases: leap-year, invalid-request">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Budget/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Budget/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BudgetKata/BudgetService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BudgetKata/BudgetService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BudgetKata/BudgetServiceTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BudgetKata/BudgetServiceTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BudgetKata/bin/Debug/net7.0/BudgetKata.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BudgetKata/bin/Debug/net7.0/BudgetKata.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BudgetKata/bin/Debug/net7.0/BudgetKata.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BudgetKata/bin/Debug/net7.0/BudgetKata.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BudgetKata/obj/Debug/net7.0/BudgetKata.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BudgetKata/obj/Debug/net7.0/BudgetKata.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BudgetKata/obj/Debug/net7.0/BudgetKata.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BudgetKata/obj/Debug/net7.0/BudgetKata.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BudgetKata/obj/Debug/net7.0/ref/BudgetKata.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BudgetKata/obj/Debug/net7.0/ref/BudgetKata.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BudgetKata/obj/Debug/net7.0/refint/BudgetKata.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BudgetKata/obj/Debug/net7.0/refint/BudgetKata.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700900014045</updated>
-      <workItem from="1700900015108" duration="3367000" />
+      <workItem from="1700900015108" duration="5109000" />
     </task>
     <task id="LOCAL-00001" summary="add Budget.cs">
       <created>1700901507322</created>
@@ -64,7 +70,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700901507322</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add test cases: leap-year, invalid-request">
+      <created>1700904135971</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700904135971</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -74,6 +87,26 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="add Budget.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Budget.cs" />
+    <MESSAGE value="add test cases: leap-year, invalid-request" />
+    <option name="LAST_COMMIT_MESSAGE" value="add test cases: leap-year, invalid-request" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BudgetKata/BudgetService.cs</url>
+          <line>18</line>
+          <properties documentPath="D:\ning\TDD1125\Budget\BudgetKata\BudgetService.cs" initialLine="18" containingFunctionPresentation="Method 'Query'">
+            <startOffsets>
+              <option value="323" />
+            </startOffsets>
+            <endOffsets>
+              <option value="366" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
