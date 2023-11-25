@@ -1,0 +1,12 @@
+D:\ning\TDD1125\Tennis\Tennis\bin\Debug\net7.0\Tennis.deps.json
+D:\ning\TDD1125\Tennis\Tennis\bin\Debug\net7.0\Tennis.dll
+D:\ning\TDD1125\Tennis\Tennis\bin\Debug\net7.0\Tennis.pdb
+D:\ning\TDD1125\Tennis\Tennis\obj\Debug\net7.0\Tennis.csproj.AssemblyReference.cache
+D:\ning\TDD1125\Tennis\Tennis\obj\Debug\net7.0\Tennis.GeneratedMSBuildEditorConfig.editorconfig
+D:\ning\TDD1125\Tennis\Tennis\obj\Debug\net7.0\Tennis.AssemblyInfoInputs.cache
+D:\ning\TDD1125\Tennis\Tennis\obj\Debug\net7.0\Tennis.AssemblyInfo.cs
+D:\ning\TDD1125\Tennis\Tennis\obj\Debug\net7.0\Tennis.csproj.CoreCompileInputs.cache
+D:\ning\TDD1125\Tennis\Tennis\obj\Debug\net7.0\Tennis.dll
+D:\ning\TDD1125\Tennis\Tennis\obj\Debug\net7.0\refint\Tennis.dll
+D:\ning\TDD1125\Tennis\Tennis\obj\Debug\net7.0\Tennis.pdb
+D:\ning\TDD1125\Tennis\Tennis\obj\Debug\net7.0\ref\Tennis.dll
